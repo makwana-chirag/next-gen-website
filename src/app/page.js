@@ -5,6 +5,7 @@ import { TimeLineSection } from "@/modules/TimeLineSection/TimeLineSection";
 import { TestimonialSlider } from "@/modules/TestimonialSlider/TestimonialSlider";
 import { BookConsultancy } from "@/modules/BookConsultancy/BookConsultancy";
 import { HotServices } from "@/modules/HotServices/HotServices";
+import { GrowthSection } from "@/modules/GrowthSection/GrowthSection";
 
 const Hero = () => {
   return (
@@ -12,6 +13,7 @@ const Hero = () => {
       <HeroSection />
       <Statistics />
       <TimeLineSection />
+      <GrowthSection />
       <HotServices />
       <TestimonialSlider />
       <BookConsultancy />
