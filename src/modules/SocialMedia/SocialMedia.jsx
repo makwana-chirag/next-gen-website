@@ -25,14 +25,16 @@ const socialContent = [
 ];
 export const SocialMedia = () => {
   return (
-    <div>
-      <img src="/logo.png" alt="" />
-      <div>
+    <div className="w-full main-container flex !border-t !border-b !border-gray-500 !py-[46px] justify-between">
+      <img src="/logo.png" className="w-[280px]" alt="" />
+      <div className="flex gap-[43px] items-center">
         {content.map((item, index) => (
-          <p key={index}>{item}</p>
+          <p className="!text-normal !text-[19px] !text-white" key={index}>
+            {item}
+          </p>
         ))}
       </div>
-      <div>
+      <div className="flex gap-[32px]">
         {socialContent.map((item, index) => (
           <a key={index} href={item.link}>
             <img src={item.icon} alt={item.name} />
