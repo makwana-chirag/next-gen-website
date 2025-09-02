@@ -37,7 +37,7 @@ const content = [
 export const HotServices = () => {
   return (
     <div className="main-container flex flex-col gap-[80px] justify-center items-center">
-      <p className="text-[40px] font-bold text-[rgba(5, 50, 95, 1)] font-semibold text-[46px]">
+      <p className=" !text-[#05325F] !font-semibold !text-[46px]">
         Hot Services (Ft. Funding)
       </p>
       <div className="grid grid-cols-3 grid-rows-2 gap-[69px]">

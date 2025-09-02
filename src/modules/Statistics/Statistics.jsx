@@ -4,28 +4,28 @@ import { StatsCards } from "./components/StatsCards";
 const content = [
   {
     icon: "/stats/who.png",
-    title: "150",
+    title: "150+",
     subTitle: "Gamechangers",
   },
   {
     icon: "/stats/people.png",
-    title: "1200",
+    title: "1200+",
     subTitle: "Success Stories",
   },
   {
     icon: "/stats/boxs.png",
-    title: "1500",
+    title: "1500+",
     subTitle: "Breakthroughs",
   },
   {
     icon: "/stats/check.png",
-    title: "80",
+    title: "80+",
     subTitle: "Solutions",
   },
 ];
 export const Statistics = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white flex gap-[40px]  !mt-[80px] !mb-[80px]">
       {content.map((item, index) => (
         <StatsCards key={index} item={item} />
       ))}
