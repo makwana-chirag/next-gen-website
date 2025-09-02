@@ -49,16 +49,24 @@ export const TimeLineSection = () => {
   ];
 
   return (
-    <div className=" w-full bg-[#E8F4FF] ">
-      <div className="main-container">
+    <div className=" w-full bg-[#E8F4FF]  ">
+      <div className="main-container !mt-18 !mb-40">
         <p
-          className={`${beVietnam.className} text-[46px] mb-11 font-semibold text-center text-[#05325F]`}
+          className={`${beVietnam.className} text-[46px] font-semibold text-center text-[#05325F] !mb-20`}
         >
           From Spark to Motion – The Next-Gen Way:
         </p>
 
         <div className="relative">
-          <div className="absolute left-7 top-0 bottom-0 w-[2px] bg-[#2E5AA8]"></div>
+          <div className="absolute left-14 z-2   -top-10 -bottom-10 w-[3px] bg-[#2E5AA8]">
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 text-[#2E5AA8] text-xl">
+              ↑
+            </div>
+
+            <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 text-[#2E5AA8] text-xl">
+              ↓
+            </div>
+          </div>
 
           <WideCard content={content} />
 

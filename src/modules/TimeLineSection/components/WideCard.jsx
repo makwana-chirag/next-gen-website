@@ -12,15 +12,15 @@ export const WideCard = ({ content }) => {
         return (
           <div
             key={index}
-            className="relative shadow-md border rounded-[11px] border-[#6B728080] px-[25px] py-[23px] flex items-center gap-[37px] justify-center wide-card-background"
+            className="relative !shadow-md !border !rounded-[11px] !border-[#6B728080] !px-[15px] !py-[4px] flex items-center gap-[37px] justify-center wide-card-background"
           >
             <div className="relative flex-shrink-0">
-              <div className="w-[60px] h-[60px] rounded-lg flex items-center justify-center">
-                <img src={item.icon} alt="icon" width={60} height={60} />
+              <div className="  rounded-lg flex items-center justify-center">
+                <img src={item.icon} alt="icon" className="z-10" />
               </div>
             </div>
 
-            <div className="flex flex-col gap-0.5 flex-1 p-6 rounded-lg ">
+            <div className="flex flex-col gap-0.5 flex-1 !p-6 !rounded-lg ">
               <p
                 className={`${beVietnam.className} text-[23px] text-[#264C92] font-medium`}
               >
