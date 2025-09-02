@@ -15,7 +15,7 @@ const content = [
     icon: "/services/bar.png",
   },
 ];
-export const HomePage = () => {
+export const HeroSection = () => {
   return (
     <div className="max-w-[1365px] mx-auto">
       <div>

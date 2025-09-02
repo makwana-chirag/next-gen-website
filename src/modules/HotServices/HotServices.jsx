@@ -36,9 +36,11 @@ const content = [
 
 export const HotServices = () => {
   return (
-    <div className="max-w-[1365px] mx-auto">
-      <h2 className="text-[40px] font-bold">Hot Services (Ft. Funding)</h2>
-      <div className="flex gap-5">
+    <div className="main-container flex flex-col gap-[80px] justify-center items-center">
+      <p className="text-[40px] font-bold text-[rgba(5, 50, 95, 1)] font-semibold text-[46px]">
+        Hot Services (Ft. Funding)
+      </p>
+      <div className="grid grid-cols-3 grid-rows-2 gap-[69px]">
         {content.map((item, index) => (
           <Card key={index} item={item} />
         ))}
