@@ -42,42 +42,47 @@ export const HeroSection = () => {
   });
 
   return (
-    <div className="relative w-full h-[700px]">
+    <div className="relative w-full h-[900px]">
       <div className="absolute top-0 left-0 w-full h-full flex">{stripes}</div>
 
       <div className="relative z-10 main-container mx-auto  flex flex-col gap-4 h-full justify-center !items-start text-center">
         <Navbar />
-        <div className="flex flex-col gap-2 !items-start">
-          <div className="flex items-center gap-4">
-            <p className="text-white">Your Growth Partner</p>
-            <button className="text-white border border-white px-4 py-2 rounded">
+        <div className="flex flex-col gap-4 !items-start">
+          <div className="flex items-center gap-4 !bg-[#264C9280] !border !rounded-[10px] !border-gray-500 !py-[6px] !px-[15px]">
+            <p className="text-white font-medium !text-[31px]">
+              Your Growth Partner
+            </p>
+            <button className="!text-white !bg-[#3A80C1]  !px-2 !py-1 !rounded-[5px]">
               Co-founder
             </button>
           </div>
+          <div className="flex flex-col items-start gap-0">
+            <p
+              className={`${beVietnam.className} text-[46px] font-semibold text-white`}
+            >
+              Your Vision, Our Execution.
+            </p>
+            <p
+              className={`${beVietnam.className} text-[46px] font-semibold text-white`}
+            >
+              Zero Obstacles.
+            </p>
+          </div>
 
-          <p
-            className={`${beVietnam.className} text-[46px] font-semibold text-white`}
-          >
-            Your Vision, Our Execution.
-          </p>
-          <p
-            className={`${beVietnam.className} text-[46px] font-semibold text-white`}
-          >
-            Zero Obstacles.
-          </p>
-
-          <p
-            className={`${beVietnam.className} text-[24px] font-normal text-white`}
-          >
-            Business is not a journey, it’s an expedition. Every obstacle ek
-            pahad hai, every win ek nayi duniya.
-          </p>
-          <p
-            className={`${beVietnam.className} text-[24px] font-normal text-white`}
-          >
-            We’re not here to advise; hum hain aapke saath legends & legacies
-            banane ke liye.
-          </p>
+          <div className="flex flex-col items-start  gap-0 !mb-4">
+            <p
+              className={`${beVietnam.className} text-[24px] font-normal text-white`}
+            >
+              Business is not a journey, it’s an expedition. Every obstacle ek
+              pahad hai, every win ek nayi duniya.
+            </p>
+            <p
+              className={`${beVietnam.className} text-[24px] font-normal text-white`}
+            >
+              We’re not here to advise; hum hain aapke saath legends & legacies
+              banane ke liye.
+            </p>
+          </div>
         </div>
         {/* Hero Cards */}
         <div className="flex gap-[50px] mt-10">
