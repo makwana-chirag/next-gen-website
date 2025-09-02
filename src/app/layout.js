@@ -16,7 +16,6 @@ export default function RootLayout({ children }) {
     <html lang="en" className={inter.className}>
       <body>
         <div className="w-full px-4">
-          <Navbar />
           <main className="flex flex-col items-center justify-center">
             {children}
           </main>
