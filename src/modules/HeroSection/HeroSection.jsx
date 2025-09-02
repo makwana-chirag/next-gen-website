@@ -49,10 +49,10 @@ export const HeroSection = () => {
         <Navbar />
         <div className="flex flex-col gap-4 !items-start">
           <div className="flex items-center gap-4 !bg-[#264C9280] !border !rounded-[10px] !border-gray-500 !py-[6px] !px-[15px]">
-            <p className="text-white font-medium !text-[31px]">
+            <p className="text-white font-medium !text-[24px]">
               Your Growth Partner
             </p>
-            <button className="!text-white !bg-[#3A80C1]  !px-2 !py-1 !rounded-[5px]">
+            <button className="!text-white !bg-[#3A80C1] !text-[14px] !px-2 !py-1 !rounded-[5px]">
               Co-founder
             </button>
           </div>
