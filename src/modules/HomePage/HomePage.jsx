@@ -4,15 +4,15 @@ import { HeroCard } from "./components/HeroCard";
 const content = [
   {
     title: "Bold Vision",
-    icon: "public/services/eye.png",
+    icon: "/services/eye.png",
   },
   {
     title: "True Growth",
-    icon: "public/services/scale.png",
+    icon: "/services/scale.png",
   },
   {
     title: "Limitless Scale",
-    icon: "public/services/bar.png",
+    icon: "/services/bar.png",
   },
 ];
 export const HomePage = () => {

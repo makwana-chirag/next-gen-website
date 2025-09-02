@@ -2,8 +2,8 @@ import React from "react";
 
 export const StatsCards = ({ item }) => {
   return (
-    <div>
-      <img src={item.icon} alt="" /> <h2>{item.title}</h2>{" "}
+    <div className="max-h-[255px] max-w-[312px] w-full bg-blue-gradient rounded-lg p-6">
+      <img src={item.icon} /> <h2>{item.title}</h2>
       <p>{item.subTitle}</p>
     </div>
   );
