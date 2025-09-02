@@ -6,14 +6,19 @@ const beVietnam = Be_Vietnam_Pro({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-be-vietnam",
 });
+
 export const BookConsultancy = () => {
   return (
-    <>
+    <div className="relative w-full">
       <div
+        className="absolute top-0 left-0 w-full h-[400px]"
         style={{
           background: "linear-gradient(180deg, #E8F4FF 0%, #E8F4FF 100%)",
+          clipPath: "polygon(0 0, 0 60%, 50% 100%, 100% 60%, 100% 0)",
+          zIndex: -10,
         }}
       />
+
       <div className="w-full main-container !mb-10 !mt-50">
         <div
           className="flex !justify-center !items-center gap-[100px]  !rounded-[12px] !h-[258px]"
@@ -43,6 +48,6 @@ export const BookConsultancy = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };

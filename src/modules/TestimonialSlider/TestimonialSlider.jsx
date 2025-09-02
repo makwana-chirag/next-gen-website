@@ -4,7 +4,6 @@ import React, { useState } from "react";
 export const TestimonialSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // ✅ Replace with your own image URLs in /public folder or external links
   const images = [
     "/frame.png",
     "/frame.png",
@@ -26,7 +25,6 @@ export const TestimonialSlider = () => {
     setCurrentSlide(index);
   };
 
-  // ✅ Show 5 visible cards at a time
   const getVisibleSlides = () => {
     const slides = [];
     for (let i = 0; i < 5; i++) {
@@ -39,13 +37,11 @@ export const TestimonialSlider = () => {
   const visibleSlides = getVisibleSlides();
 
   return (
-    <div className="w-full  main-container justify-center flex flex-col p-8 bg-white relative">
-      {/* Title */}
+    <div className="w-full  main-container justify-center flex flex-col p-8 bg-white relative !mb-12">
       <p className="!text-[45px] !font-semibold !text-center !text-[#05325F] !mb-[60px]">
         Real experiences, real voices
       </p>
 
-      {/* Slider Container */}
       <div className="relative justify-center items-center flex flex-col overflow-hidden">
         <div className="flex gap-1  transition-transform duration-300 ease-in-out">
           {visibleSlides.map((image, index) => {
