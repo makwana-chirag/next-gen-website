@@ -7,7 +7,7 @@ const beVietnam = Be_Vietnam_Pro({
 });
 export const GrowthSection = () => {
   return (
-    <div className="!mt-20">
+    <div className="!my-20">
       <p
         className={`${beVietnam.className} text-[46px] font-semibold text-center text-[#05325F] !mb-80`}
       >

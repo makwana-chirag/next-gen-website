@@ -1,9 +1,8 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { Footer } from "@/components/Footer";
-import { Navbar } from "@/components/Navbar";
 import { BottomSection } from "@/modules/BottomSection/BottomSection";
-
+import FloatingImage from "@/components/FioatingImage";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -22,6 +21,13 @@ export default function RootLayout({ children }) {
           <Footer />
           <BottomSection />
         </div>
+        <FloatingImage
+          src="/phone.svg"
+          alt="Action"
+          href="/"
+          size={64}
+          className="bottom-6 right-6"
+        />
       </body>
     </html>
   );

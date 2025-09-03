@@ -27,8 +27,8 @@ export const HeroSection = () => {
       ratio = (totalStripes - 1 - i) / (half - 1);
     }
 
-    const color1Percent = 10 + ratio * 60;
-    const color2Percent = 90 - ratio * 60;
+    const color1Percent = 10 + ratio * 40;
+    const color2Percent = 90 - ratio * 20;
 
     return (
       <div
@@ -42,7 +42,7 @@ export const HeroSection = () => {
   });
 
   return (
-    <div className="relative w-full h-[900px]">
+    <div className="relative w-full h-[850px] !pb-10">
       <div className="absolute top-0 left-0 w-full h-full flex">{stripes}</div>
 
       <div className="relative z-10 main-container mx-auto  flex flex-col gap-4 h-full justify-center !items-start text-center">

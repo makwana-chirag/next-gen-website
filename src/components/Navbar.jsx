@@ -9,7 +9,7 @@ export const Navbar = () => {
           <img src="/logo.png" />
         </div>
         <div className="flex gap-5">
-          <div className="flex items-center !bg-[#264C9280] !border !rounded-[10px] !border-gray-500 !py-[15px] !px-[14px] !text-white !font-medium !text-[22px] gap-[29px]">
+          <div className="flex items-center max-h-[50px] !bg-[#264C9280] !border !rounded-[10px] !border-gray-500 !py-[10px] !px-[12px] !text-white !font-medium !text-[22px] gap-[29px]">
             {content.map((item, index) => (
               <a
                 href="#"
@@ -20,7 +20,7 @@ export const Navbar = () => {
               </a>
             ))}
           </div>
-          <button className="!bg-[#264C9280] !border !rounded-[10px] !border-gray-500 !py-[13px] !px-[14px] !text-white !font-medium !text-[22px]">
+          <button className="!bg-[#264C9280] flex flex-col max-h-[50px] !text-center !justify-center !items-center  !border !rounded-[10px] !border-gray-500 !py-[10px] !px-[12px] !text-white !font-medium !text-[22px]">
             Let’s Transform
           </button>
         </div>

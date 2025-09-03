@@ -36,7 +36,7 @@ const content = [
 
 export const HotServices = () => {
   return (
-    <div className="main-container flex flex-col gap-[80px] justify-center items-center">
+    <div className="main-container flex flex-col gap-[80px] justify-center items-center !mb-15">
       <p className=" !text-[#05325F] !font-semibold !text-[46px]">
         Hot Services (Ft. Funding)
       </p>
@@ -45,6 +45,9 @@ export const HotServices = () => {
           <Card key={index} item={item} />
         ))}
       </div>
+      <p className="!text-[#05325F] !font-semibold !text-[23px] !text-center">
+        View all ›
+      </p>
     </div>
   );
 };
