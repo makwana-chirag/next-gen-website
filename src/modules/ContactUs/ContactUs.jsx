@@ -31,7 +31,10 @@ export const ContactUs = () => {
 
   const handleSubmit = async (values, { resetForm }) => {
     try {
-      const res = await axios.post("http://localhost:4000/inquiries", values);
+      const res = await axios.post(
+        `${process.env.NEXT_PUBLIC_API_URL}/inquiries`,
+        values
+      );
       if (res.data.success) {
         toast.success("Inquiry submitted successfully!");
         resetForm();
@@ -78,7 +81,6 @@ export const ContactUs = () => {
       {modalOpen && (
         <div className="!fixed !inset-0 !flex !items-center !justify-center !bg-black/60 !z-50">
           <div className="!bg-white !rounded-2xl !shadow-2xl !w-[450px] !p-8 !relative !flex !flex-col !gap-6">
-            {/* Close Button */}
             <button
               onClick={() => setModalOpen(false)}
               className="!absolute !top-4 !right-4 !text-gray-400 hover:!text-gray-700 !text-xl !font-bold"
@@ -97,7 +99,6 @@ export const ContactUs = () => {
               Fill out the form below and we will get back to you shortly.
             </p>
 
-            {/* Form */}
             <Formik
               initialValues={initialValues}
               validationSchema={validationSchema}
